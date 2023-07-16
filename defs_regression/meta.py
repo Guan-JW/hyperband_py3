@@ -1,7 +1,7 @@
 # meta regressor
 from common_defs import *
 
-regressors = ( 'gb', 'rf', 'xt', 'sgd', 'polylearn_fm', 'polylearn_pn', 'keras_mlp' )
+regressors = ( 'gb', 'rf', 'xt', 'sgd', 'keras_mlp' )
 
 # import all the functions
 for r in regressors:
@@ -21,7 +21,7 @@ def try_params( n_iterations, params ):
 	
 	params_ = dict( params )
 	r = params_.pop( 'regressor' )
-	print r
+	print (r)
 	
 	return eval( "try_params_{}( n_iterations, params_ )".format( r ))
 			 

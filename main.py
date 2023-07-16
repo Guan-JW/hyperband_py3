@@ -4,7 +4,7 @@
 "includes displaying best results and saving to a file"
 
 import sys
-import cPickle as pickle
+import pickle
 from pprint import pprint
 
 from hyperband import Hyperband

@@ -6,7 +6,7 @@ defs files import data from here (from load_data import data)
 
 # this particular example loads data from a pickle file
 
-import cPickle as pickle
+import pickle
 
 data_file = 'data/classification.pkl'
 
